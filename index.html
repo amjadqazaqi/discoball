@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+div.touch
+ {
+  position: absolute;
+  top: 0px;
+  width:100%;
+  height: 100%;
+  z-index: 2;
+  
+}
+
+div.discoball
+ {
+    background :url("https://lh6.googleusercontent.com/WLGWb8TzUtpg2pOnOJGpjO-7TV9t3maB5HolL078-ABteqmuOQr8DtLtZOwSPu4vAhzleXCIoBXjlB8DE4lG=w1920-h908") no-repeat ;
+    position: absolute;
+    left: 35%;
+    top: 0px;
+    width: 450px;
+    height: 450px;
+ 
+}
+div.dancer
+     {
+    
+    background-image: url("https://lh6.googleusercontent.com/e3y6Dryx9-voqyF7tuKW2G3n7O5AfK2ucVuXLXe96yUlkET9t-rzsS-fQFuqXXH0-L0-sTns4GQgF3PZ_eX5=w1920-h908")  ;
+    
+    background-size: 10%;
+    position: absolute;
+    top: 0px;
+    width:100%;
+    height: 100%;
+     z-index: -1;
+}
+
+.touch:hover ~ .dancer {
+    
+    background-image: url("https://i.giphy.com/media/3Z3GtaRZzwbx6/giphy.gif")  ;
+     
+    
+}
+.touch:hover ~ .discoball {
+    
+    background :url("http://gifimage.net/wp-content/uploads/2017/07/disco-ball-gif-17.gif") no-repeat ;
+  
+     
+    
+}
+
+
+     </style>
+        </head>
+        <body>
+            <div class="touch"></div>         
+            <div class="discoball"></div>            
+            <div class="dancer"></div> 
+    </body>
+</html>
